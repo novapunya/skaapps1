@@ -7,28 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-fixed-top navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-              <%= link_to "Brand", "", class: "navbar-brand", id:"logo"%>
-
-      </div>
-      <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Customer", "" %></li>
-        <li><%= link_to "Supplier", "" %></li>
-        <li><%= link_to "Sales Order", "" %></li>
-        
-      </ul>
-      </div>
-    </div>
-  </nav>
+  <%= render 'layouts/navigation' %>
   
-  
-
 <div class= "container"><%= yield %>
 
-<div class="footer"><p>&copy; SKA Apps 2015</p></div>
+   <%= render 'layouts/footer' %>
 </div>
 
 
